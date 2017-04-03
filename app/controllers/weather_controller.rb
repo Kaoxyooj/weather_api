@@ -5,7 +5,7 @@ require 'json'
 class WeatherController < ApplicationController
 
   def index
-    api_key   = "DARKSKY_API"
+    api_key   = ENV["DARKSKY_API"]
     latitude  = "43.038902"
     longitude = "-87.906471"
     date      = "1986-02-11"
